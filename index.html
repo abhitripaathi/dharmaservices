@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dharma Services • Premium Contractor</title>
+<meta name="description" content="Dharma Services - Government & Railway Contractor. Mirzapur, UP. Contact +91 7435919392" />
+<style>
+:root{--blue:#062b5a;--gold:#d6a600;--bg:#f6f8fb;--card:#ffffff;--muted:#5b6770}
+*{box-sizing:border-box}body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg);color:#0f1724}
+.header{position:fixed;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;z-index:90;transition:all .3s}
+.header.transparent{background:linear-gradient(180deg, rgba(3,37,76,0.18), rgba(3,37,76,0.06));color:white}
+.header.solid{background:#fff;box-shadow:0 6px 22px rgba(2,6,23,0.08);color:var(--blue)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:44px;width:44px;object-fit:contain;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.12)}
+nav a{margin:0 12px;text-decoration:none;font-weight:600;color:inherit;opacity:.9}
+.cta{display:flex;gap:10px;align-items:center}
+.btn{padding:10px 16px;border-radius:999px;font-weight:800;border:0;cursor:pointer}
+.btn.call{background:linear-gradient(90deg,var(--blue),#0b5fb1);color:#fff;box-shadow:0 8px 20px rgba(11,95,177,.18)}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.18);color:#fff}
+
+/* Hero */
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 18px;background-image:url('assets/1.jpg');background-size:cover;background-position:center;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(3,37,76,0.55), rgba(3,37,76,0.55));}
+.hero-inner{position:relative;z-index:2;color:#fff;max-width:1100px}
+.hero h1{font-size:44px;letter-spacing:1px;margin:0 0 12px}
+.hero p{margin:0 0 20px;font-size:18px;color:rgba(255,255,255,.92)}
+.hero .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Sections */
+.section{padding:88px 18px;max-width:1100px;margin:0 auto}
+.section h2{text-align:center;color:var(--blue);margin-bottom:8px}
+.lead{text-align:center;color:var(--muted);max-width:880px;margin:0 auto 26px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start}
+.profile-card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,.06);text-align:center}
+.profile-card img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:6px solid rgba(214,166,0,0.14)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.fact{background:#f6fbff;padding:12px;border-radius:10px;text-align:center}
+
+/* Services - glass cards */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.service-card{backdrop-filter:blur(6px);background:rgba(255,255,255,0.6);padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,.06);transition:transform .25s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(2,6,23,.09);border:1px solid rgba(214,166,0,0.12)}
+
+/* Gallery masonry */
+.gallery{column-count:3;column-gap:12px}
+.gallery figure{break-inside:avoid;margin:0 0 12px;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,.06)}
+.gallery img{width:100%;display:block;transition:transform .25s}
+.gallery figure:hover img{transform:scale(1.04)}
+
+/* Why */
+.why{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;justify-content:center}
+.why .point{flex:1;min-width:220px;background:var(--blue);color:#fff;padding:18px;border-radius:12px;text-align:left;box-shadow:0 10px 30px rgba(2,6,23,.08)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-card{background:var(--card);padding:18px;border-radius:12px}
+
+/* Footer */
+footer{background:#080808;color:#ddd;padding:22px;text-align:center;margin-top:36px;border-top:4px solid rgba(214,166,0,0.06)}
+
+/* Responsive */
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.gallery{column-count:2}.hero h1{font-size:32px}}@media (max-width:600px){.gallery{column-count:1}nav a{display:none}}
+
+</style>
+</head>
+<body>
+<!-- Header -->
+<header id="header" class="header transparent">
+  <div class="brand"><img src="logo.png" alt="Dharma Services logo"><div><strong>Dharma Services</strong></div></div>
+  <nav id="main-nav"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <div class="cta"><a class="btn call" href="tel:+917435919392">📞 Call Now</a></div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1>DHARMA SERVICES</h1>
+    <p>Government Contractor — <strong>Railway Contractor</strong></p>
+    <div class="actions"><a class="btn" href="#contact" style="background:linear-gradient(90deg,#d6a600,#f3d46a);">Get in Touch</a><a class="btn alt" href="mailto:tavadhesh113@gmail.com" style="color:#062b5a;background:#fff;">Email Us</a></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p class="lead">Dharma Services ek trusted government contractor firm hai, jo railway aur infrastructure projects me anubhav rakhti hai.</p>
+  <div class="about-grid">
+    <div class="profile-card">
+      <img src="avadhesh tiwari.jpg" alt="Avadhesh Kumar Tiwari">
+      <h3 style="margin:8px 0 0">Avadhesh Kumar Tiwari</h3>
+      <p style="color:var(--muted);margin:6px 0">C/O Tadkeshwar Nath Tiwari</p>
+      <p style="color:var(--muted);margin:6px 0">Gram – Nifara, Post – Nadini, Mirzapur, UP – 231303</p>
+      <div class="facts"><div class="fact"><strong>Quality</strong><div style="color:var(--muted)">Assured Work</div></div><div class="fact"><strong>Safety</strong><div style="color:var(--muted)">First Policy</div></div><div class="fact"><strong>On-Time</strong><div style="color:var(--muted)">Delivery</div></div></div>
+    </div>
+    <div class="card">
+      <h3>Company Profile</h3>
+      <p>We execute railway and infrastructure projects with a focus on safety, precision and timely completion. Our approach is documentation-ready and aligned with government standards.</p>
+      <ul><li>End-to-end site execution & supervision</li><li>Material, manpower & compliance management</li><li>Transparent communication and reporting</li></ul>
+      <p style="margin-top:12px"><strong>GST:</strong> 09BFJPT2051P1ZS • <strong>Email:</strong> <a href="mailto:tavadhesh113@gmail.com">tavadhesh113@gmail.com</a> • <strong>Phone:</strong> <a href="tel:+917435919392">+91 7435919392</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section" style="background:linear-gradient(180deg,transparent,rgba(3,37,76,0.02))">
+  <h2>Our Services</h2>
+  <p class="lead">Railway and infrastructure solutions designed for reliability.</p>
+  <div class="services-grid">
+    <div class="service-card"><h3>Railway Contract Works</h3><p>Track, ballast, signaling support, minor bridges and allied civil works with strict QA/QC.</p></div>
+    <div class="service-card"><h3>Government Project Execution</h3><p>Tender-based government projects with documentation, billing & safety compliance.</p></div>
+    <div class="service-card"><h3>Civil Construction</h3><p>Foundations, RCC, masonry, drains, approach roads and site infrastructure.</p></div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects / Work Gallery</h2>
+  <p class="lead">Ongoing & Completed Projects</p>
+  <div class="gallery">
+    <figure><img src="2.jpg" alt="project 2"></figure>
+    <figure><img src="4.jpg" alt="project 4"></figure>
+    <figure><img src="5.jpg" alt="project 5"></figure>
+    <figure><img src="6.jpg" alt="project 6"></figure>
+    <figure><img src="7.jpg" alt="project 7"></figure>
+    <figure><img src="8.jpg" alt="project 8"></figure>
+    <figure><img src="9.jpg" alt="project 9"></figure>
+    <figure><img src="10.jpg" alt="project 10"></figure>
+    <figure><img src="1.jpg" alt="project 1"></figure>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section" style="background:linear-gradient(90deg,#062b5a,#0b4f88);color:#fff;padding:56px 18px">
+  <h2 style="color:#fff">Why Choose Us</h2>
+  <p class="lead" style="color:rgba(255,255,255,0.9)">Trusted for government work, safety-first approach and timely delivery.</p>
+  <div class="why">
+    <div class="point">✔️ <strong style="margin-left:8px">Government-approved contractor</strong></div>
+    <div class="point">✔️ <strong style="margin-left:8px">Timely & quality project completion</strong></div>
+    <div class="point">✔️ <strong style="margin-left:8px">Skilled team & reliable services</strong></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p class="lead">We respond quickly to calls and emails.</p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <p><strong>Address:</strong> Gram – Nifara, Post – Nadini,<br>District – Mirzapur, Uttar Pradesh – 231303, India</p>
+      <p><strong>Mobile:</strong> <a href="tel:+917435919392">+91 7435919392</a></p>
+      <p><strong>Email:</strong> <a href="mailto:tavadhesh113@gmail.com">tavadhesh113@gmail.com</a></p>
+      <p><strong>GST No.:</strong> 09BFJPT2051P1ZS</p>
+      <div style="display:flex;gap:10px;margin-top:12px"><a class="btn call" href="tel:+917435919392">📞 Call Now</a><a class="btn" href="mailto:tavadhesh113@gmail.com" style="background:linear-gradient(90deg,#d6a600,#f3d46a);">Send Email</a></div>
+    </div>
+    <div class="contact-card" style="padding:0;overflow:hidden"><iframe src="https://www.google.com/maps?q=Mirzapur%2C%20Uttar%20Pradesh&z=10&output=embed" loading="lazy" style="border:0;width:100%;height:100%;min-height:320px"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div style="max-width:1100px;margin:0 auto;padding:6px 18px;color:#cbd5e1"><strong>Dharma Services</strong> • GST: 09BFJPT2051P1ZS<br><small>© 2025 Dharma Services. All rights reserved.</small></div>
+</footer>
+
+<script>
+// Header transparency toggle on scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY>40){ header.classList.remove('transparent'); header.classList.add('solid'); }
+  else { header.classList.remove('solid'); header.classList.add('transparent'); }
+});
+</script>
+</body>
+</html>
